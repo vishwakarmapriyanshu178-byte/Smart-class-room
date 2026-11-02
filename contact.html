@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact & Feedback | SmartClass</title>
+
+    <!-- IMPORTANT: CSS FILE -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a class="logo" href="index.html">
+            Smart<span>Class</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="technologies.html">
+                Technologies
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a class="active" href="contact.html">
+                Contact & Feedback
+            </a>
+
+            <a href="logout.html">
+                Logout
+            </a>
+
+        </div>
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- PAGE TITLE -->
+
+    <section class="page-title">
+
+        <p class="tag">
+            GET IN TOUCH
+        </p>
+
+        <h1>
+            Contact & Feedback
+        </h1>
+
+        <p>
+            Contact us, ask your questions and share your
+            valuable feedback about SmartClass.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact-layout">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info">
+
+            <h2>
+                Contact Information
+            </h2>
+
+            <p class="contact-intro">
+                We are happy to hear from you. You can contact
+                SmartClass using the information below.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📧
+                </div>
+
+                <div>
+                    <h3>Email</h3>
+
+                    <p>
+                        smartclass@example.com
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+
+                    <p>
+                        +91 98765 43210
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+                    <h3>Location</h3>
+
+                    <p>
+                        Maharashtra, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    🕐
+                </div>
+
+                <div>
+                    <h3>Working Hours</h3>
+
+                    <p>
+                        Monday - Saturday<br>
+                        9:00 AM - 6:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="support-box">
+
+                <h3>
+                    SmartClass Support
+                </h3>
+
+                <p>
+                    For questions, suggestions or technical
+                    issues, send us a message using the form.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="form-card contact-form-card">
+
+            <div class="form-icon">
+                💬
+            </div>
+
+            <h2>
+                Send Us a Message
+            </h2>
+
+            <p class="form-subtitle">
+                Contact us or submit your feedback.
+            </p>
+
+
+            <form id="contactForm">
+
+
+                <label>
+
+                    Your Name
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Enter your name"
+                        required>
+
+                </label>
+
+
+                <label>
+
+                    Email Address
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter your email"
+                        required>
+
+                </label>
+
+
+                <label>
+
+                    Subject
+
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="Enter subject"
+                        required>
+
+                </label>
+
+
+                <label>
+
+                    Rating
+
+                    <select id="rating" required>
+
+                        <option value="">
+                            Select your rating
+                        </option>
+
+                        <option value="5">
+                            ⭐⭐⭐⭐⭐ Excellent
+                        </option>
+
+                        <option value="4">
+                            ⭐⭐⭐⭐ Very Good
+                        </option>
+
+                        <option value="3">
+                            ⭐⭐⭐ Good
+                        </option>
+
+                        <option value="2">
+                            ⭐⭐ Average
+                        </option>
+
+                        <option value="1">
+                            ⭐ Poor
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+
+                    Message / Feedback
+
+                    <textarea
+                        id="contactMessage"
+                        placeholder="Write your message or feedback..."
+                        required></textarea>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn primary contact-submit">
+
+                    Submit Message
+
+                </button>
+
+
+                <p
+                    id="contactResponse"
+                    class="message">
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 SmartClass | Contact & Feedback
+    </p>
+
+</footer>
+
+
+<!-- IMPORTANT: JAVASCRIPT -->
+<script src="./script.js"></script>
+
+</body>
+
+</html>

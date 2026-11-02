@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SmartClass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<header>
+    <nav class="navbar login-navbar">
+        <a class="logo" href="login.html">
+            Smart<span>Class</span>
+        </a>
+    </nav>
+</header>
+
+<main class="login-container">
+
+    <div class="login-card">
+
+        <div class="login-logo">
+            🎓
+        </div>
+
+        <p class="tag">SMART CLASSROOM</p>
+
+        <h1>Welcome Back</h1>
+
+        <p class="login-subtitle">
+            Login to access your SmartClass website.
+        </p>
+
+        <form id="loginForm">
+
+            <label>
+                Email Address
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+            </label>
+
+            <label>
+                Password
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    minlength="4"
+                    required
+                >
+            </label>
+
+            <label class="remember">
+                <input type="checkbox" id="remember">
+                Remember me
+            </label>
+
+            <button type="submit" class="btn primary login-btn">
+                Login
+            </button>
+
+
+            <div class="forgot-box">
+                <a href="#" onclick="forgotPassword(event)">
+                    Forgot Password?
+                </a>
+            </div>
+
+            <p id="loginMessage" class="message"></p>
+            <p class="login-subtitle">New to SmartClass? <a href="register.html">Create an account</a></p>
+
+        </form>
+
+        <div class="demo-login">
+          
+           
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 SmartClass | Smart Classroom Technologies</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

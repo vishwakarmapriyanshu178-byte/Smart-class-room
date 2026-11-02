@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SmartClass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a class="logo" href="index.html">
+            Smart<span>Class</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="technologies.html">Technologies</a>
+            <a class="active" href="dashboard.html">Dashboard</a>
+            <a href="contact.html">Contact & Feedback</a>
+            <a href="logout.html">Logout</a>
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </nav>
+</header>
+
+<main>
+
+<section class="page-title">
+
+    <p class="tag">SMART CLASSROOM DASHBOARD</p>
+
+    <h1>Classroom Dashboard</h1>
+
+    <p>
+        Enter your classroom information and view
+        the details instantly.
+    </p>
+
+</section>
+
+<section class="dashboard-layout">
+
+    <div class="form-card">
+
+        <h2>Classroom Information</h2>
+
+        <form id="classForm">
+
+            <label>
+                Teacher Name
+                <input
+                    type="text"
+                    id="teacher"
+                    placeholder="Enter teacher name"
+                    required
+                >
+            </label>
+
+            <label>
+                Class Name
+                <input
+                    type="text"
+                    id="className"
+                    placeholder="Example: BSc IT Sem 5"
+                    required
+                >
+            </label>
+
+            <label>
+                Number of Students
+                <input
+                    type="number"
+                    id="students"
+                    placeholder="Enter number"
+                    min="1"
+                    required
+                >
+            </label>
+
+            <label>
+                Main Technology
+                <select id="technology" required>
+                    <option value="">Select technology</option>
+                    <option value="Interactive Board">
+                        Interactive Board
+                    </option>
+                    <option value="Artificial Intelligence">
+                        Artificial Intelligence
+                    </option>
+                    <option value="Cloud Computing">
+                        Cloud Computing
+                    </option>
+                    <option value="IoT">
+                        IoT
+                    </option>
+                    <option value="AR / VR">
+                        AR / VR
+                    </option>
+                </select>
+            </label>
+
+            <label>
+                Today's Topic
+                <input
+                    type="text"
+                    id="topic"
+                    placeholder="Enter today's topic"
+                    required
+                >
+            </label>
+
+            <div class="form-actions">
+
+                <button class="btn primary" type="submit">
+                    Save Details
+                </button>
+
+                <button
+                    class="btn secondary"
+                    type="button"
+                    onclick="clearClassroom()">
+                    Clear
+                </button>
+
+            </div>
+
+            <p id="formMessage" class="message"></p>
+
+        </form>
+
+    </div>
+
+    <div class="live-card">
+
+        <div class="live-top">
+            <span class="live-dot"></span>
+            LIVE CLASSROOM
+        </div>
+
+        <h2 id="displayClass">
+            Your classroom
+        </h2>
+
+        <p id="displayTeacher">
+            Teacher information will appear here.
+        </p>
+
+        <div class="live-stats">
+
+            <div>
+                <b id="displayStudents">0</b>
+                <span>Students</span>
+            </div>
+
+            <div>
+                <b id="displayTech">—</b>
+                <span>Technology</span>
+            </div>
+
+        </div>
+
+        <div class="topic-box">
+
+            <small>CURRENT TOPIC</small>
+
+            <strong id="displayTopic">
+                No topic added
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 SmartClass | Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

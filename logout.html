@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Logout | SmartClass</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<header>
+
+    <nav class="navbar login-navbar">
+
+        <a class="logo" href="index.html">
+            Smart<span>Class</span>
+        </a>
+
+    </nav>
+
+</header>
+
+<main class="login-container">
+
+    <div class="login-card logout-card">
+
+        <div class="login-logo">
+            👋
+        </div>
+
+        <p class="tag">SMART CLASSROOM</p>
+
+        <h1>Logout</h1>
+
+        <p class="login-subtitle">
+            Are you sure you want to logout from SmartClass?
+        </p>
+
+        <div class="logout-buttons">
+
+            <button
+                class="btn primary"
+                onclick="confirmLogout()">
+                Yes, Logout
+            </button>
+
+            <a
+                href="index.html"
+                class="btn secondary">
+                Cancel
+            </a>
+
+        </div>
+
+        <p id="logoutMessage" class="message"></p>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>
+        © 2026 SmartClass | Smart Classroom Technologies
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
